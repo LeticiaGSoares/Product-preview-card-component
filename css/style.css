@@ -1,0 +1,66 @@
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border-style: none;
+}
+
+body{
+    background-color: var(--Cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+h1{
+    font-family: 'Fraunces', serif;
+}
+
+p{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.card{
+    width: 1440px;
+    background-color: var(--White);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image{
+    width: 50%;
+    height: auto;
+}
+
+.card-text{
+    display: flex;
+    gap: 10px;
+}
+
+.price{
+    color:var(--Dark-cyan);
+}
+
+.btn-buy{
+    display: flex;
+    background-color: var(--Dark-cyan);
+    width: 400px;
+    border-radius: 10px;
+}
