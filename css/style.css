@@ -52,10 +52,14 @@ p{
     align-items: center;
 }
 
-.card img{
+.desktop-img{
     height: 100%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+}
+
+.mobile-img{
+    display:none;
 }
 
 .text{
@@ -102,8 +106,27 @@ p{
     background-color:  hsl(158, 43%, 32%);;
 }
 
-@media (max-width:375px) {
+@media (max-width:700px) {
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+
     .card{
-        width: 300px;
+        width: 309px;
+        height: 660px;
+        flex-direction: column;
+    }
+
+    .desktop-img{
+        display:none;
+    }
+
+    .mobile-img{
+        display: block;
+        width: 309px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    
     }
 }
